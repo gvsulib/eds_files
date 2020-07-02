@@ -1,0 +1,6 @@
+// Tweak the position of the basic search logo
+.bh-logo-main {
+    position: static;
+    text-align: center !important;
+    float: none !important;
+}
