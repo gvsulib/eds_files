@@ -1,0 +1,1 @@
+console.log('The customization script is loading.');
