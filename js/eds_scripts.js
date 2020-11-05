@@ -1,5 +1,6 @@
 console.log('The customization script is loading.');
 
+setTimeout(function() {
 
 jQuery(document).ready(function() {
 
@@ -35,4 +36,6 @@ jQuery(document).ready(function() {
 
 
 });
+
+}, 1500);
 
