@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 
 	// Is this the resolver screen? If so, let's clean up this terrible mess.
 
-	if(pageName.indexOf('resolver') > -1 {
+	if(pageName.indexOf('resolver') > -1) {
 
 
 		// First, remove the existing styles
