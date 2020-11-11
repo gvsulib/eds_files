@@ -11,6 +11,7 @@
 
 .open-url-resolver ul.toolbar-tools {
 	text-align: right;
+	padding: .25em;
 }
 
 .open-url-resolver ul.basic-list {
@@ -18,6 +19,18 @@
 	margin-left: 0;
 }
 
+.open-url-resolver h1.page-title {
+	font-size: 2em;
+}
+
 #footerControl {
+	display: none;
+}
+
+.open-url-resolver .customerLogo {
+	display: none;
+}
+
+.open-url-resolver h3.h3 {
 	display: none;
 }

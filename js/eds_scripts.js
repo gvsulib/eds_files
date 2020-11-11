@@ -27,7 +27,6 @@ jQuery(document).ready(function() {
 		jQuery('span.logo').remove();
 		jQuery('ul.ftf-links:first-child').remove();
 		jQuery('.open-url-resolver').addClass('content').attr('id','cms-content');
-		jQuery('h1.page-title').addClass('h2');
 
 		// Move the Revise Results link into the other tools
 		var reviseLink = jQuery('ul.ftf-links a[data-auto="nav-revise-link"]').href;	
