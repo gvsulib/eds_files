@@ -3,3 +3,21 @@
     text-align: center !important;
     float: none !important;
 }
+
+.open-url-resolver ul.toolbar-tools li {
+	display: inline;
+	margin: .25em .5em;
+}
+
+.open-url-resolver ul.toolbar-tools {
+	text-align: right;
+}
+
+.open-url-resolver ul.basic-list {
+	list-style: none;
+	margin-left: 0;
+}
+
+#footerControl {
+	display: none;
+}
