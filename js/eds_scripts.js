@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
 		if(jQuery('#itemAskLibrarian').length > 0) {
 
 			console.log ('Fixing the Ask a Librarian link');
-			jQuery('#itemsAskLibrarian a').text('Ask a Question');
+			jQuery('#itemAskLibrarian a').text('Ask a Question');
 		}
 
 	}
