@@ -37,12 +37,15 @@ jQuery(document).ready(function() {
 
 		// Hide the Guest Access Banner
 		if(jQuery('.guest-login').length > 0) {
+			console.log('Removing the guest banner.');
 			jQuery('.guest-login').hide();
 		}
 
 		// Change Ask a Librarian Link - the settings don't appear to work.
 
 		if(jQuery('#itemAskLibrarian').length > 0) {
+
+			console.log ('Fixing the Ask a Librarian link');
 			jQuery('#itemsAskLibrarian a').text('Ask a Question');
 		}
 
