@@ -33,6 +33,19 @@ jQuery(document).ready(function() {
 		jQuery('ul.ftf-links').hide();
 		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-link" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
 
+	} else {
+
+		// Hide the Guest Access Banner
+		if(jQuery('.guest-login').length > 0) {
+			jQuery('.guest-login').hide();
+		}
+
+		// Change Ask a Librarian Link - the settings don't appear to work.
+
+		if(jQuery('#itemAskLibrarian').length > 0) {
+			jQuery('#itemsAskLibrarian a').text('Ask a Question');
+		}
+
 	}
 
 
