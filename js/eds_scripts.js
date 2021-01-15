@@ -51,8 +51,8 @@ jQuery(document).ready(function() {
 
 		// Don't proxy links to our own website, dude (we can't neverproxy this because of reasons)
 
-		if(jQuery('[href="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').length > 0) {
-			jQuery('a[href="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').attr('href', 'https://www.gvsu.edu/library');
+		if(jQuery('[href*="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').length > 0) {
+			jQuery('a[href*="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').attr('href', 'https://www.gvsu.edu/library');
 		}
 
 		jQuery('.customerLogo').find('a').attr('href', 'https://www.gvsu.edu/library');
