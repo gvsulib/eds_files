@@ -35,4 +35,17 @@
 	display: none;
 }
 
+/* Hide the icons on the FTF */
+.ftf-results ul.basic-list li ul.notes-list {
+	display: none;
+}
+
+.ftf-results ul.basic-list > li {
+	margin-bottom: .7em;
+}
+
+.ftf-results h1.more-options {
+	border-bottom: 1px solid #333;
+}
+
 .guest-login { display: none !important; }

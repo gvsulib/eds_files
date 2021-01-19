@@ -28,6 +28,10 @@ jQuery(document).ready(function() {
 		jQuery('.open-url-resolver').addClass('content').attr('id','cms-content');
 		jQuery('ul.basic-list').find('li:first-child').find('a').addClass('btn-lg').addClass('btn-primary').css('margin-bottom', '1.5em');
 
+		if(jQuery('.ftf-results ul.basic-list > li').length > 1) {
+					jQuery('.ftf-results ').find('ul.basic-list > li:first-child').after('<h1 class="h3 more-options">More Sources</h1>');
+		}
+
 		// Move the Revise Results link into the other tools
 		var reviseLink = jQuery('ul.ftf-links a[data-auto="nav-revise-link"]').href;	
 		jQuery('ul.ftf-links').hide();
