@@ -10,9 +10,11 @@ jQuery(document).ready(function() {
 
 	if(pageName.indexOf('resolver') > -1) {
 
+		console.log('This is the Link Resolver.');
 
 		// First, remove the existing styles
 		jQuery('head').find('link').remove();
+		console.log('Removing default stylesheets');
 
 		// Now, add in the GVSU template
 		jQuery('head').append('<meta http-equiv="cache-control" content="no-cache"><meta http-equiv="pragma" content="no-cache"><meta name="viewport" content="width=device-width, initial-scale=1"><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Lato:400,700"><link type="text/css" rel="stylesheet" href="https://prod.library.gvsu.edu/libs/fontawesome/fontawesome-all.min.css"><link type="text/css" rel="stylesheet" href="https://gvsu.edu/cms4/skeleton/2/files/css/styles.css"><link type="text/css" rel="stylesheet" href="https://gvsu.edu/library/files/css/base.css"><link type="text/css" rel="stylesheet" href="https://prod.library.gvsu.edu/labs/eds_files/css/eds_styles.css"><script src="https://gvsu.edu/cms4/skeleton/2/files/js/cms4.2.min.js"></script><script src="https://prod.library.gvsu.edu/labs/template_hours/hours.js"></script>');
