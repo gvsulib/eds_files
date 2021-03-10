@@ -78,6 +78,7 @@ jQuery(document).ready(function() {
 		}
 
 		jQuery('.customerLogo').find('a').attr('href', 'https://www.gvsu.edu/library');
+		jQuery('head').append('<style>.color-p4{color:#005bc6 !important;}</style>');
 
 	}
 
