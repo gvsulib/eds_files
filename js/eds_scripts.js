@@ -53,7 +53,7 @@ jQuery(document).ready(function() {
 		if(jQuery('#itemAskLibrarian').length > 0) {
 
 			console.log ('Fixing the Ask a Librarian link');
-			jQuery('#itemAskLibrarian a').text('Ask a Question');
+			jQuery('#itemAskLibrarian a').text('Get Help Now');
 		}
 
 		if(jQuery('a[data-auto="ep_link"').length > 0) {
