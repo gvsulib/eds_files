@@ -27,7 +27,7 @@ jQuery(document).ready(function() {
 		jQuery('header#header').find('div.header').removeClass('header');
 		jQuery('header#header').removeAttr('role').removeAttr('id');
 		jQuery('span.logo').remove();
-		jQuery('ul.ftf-links:first-child').remove();
+		//jQuery('ul.ftf-links:first-child').remove();
 		jQuery('.open-url-resolver').addClass('content').attr('id','cms-content');
 		jQuery('ul.basic-list').find('li:first-child').find('a').addClass('btn-lg').addClass('btn-primary').css('margin-bottom', '1.5em');
 
@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
 
 		// Move the Revise Results link into the other tools
 		var reviseLink = jQuery('ul.ftf-links a[data-auto="nav-revise-link"]').href;	
-		jQuery('ul.ftf-links').hide();
+		//jQuery('ul.ftf-links').hide();
 		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-link" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
 
 	} else {
