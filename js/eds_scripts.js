@@ -40,10 +40,10 @@ jQuery(document).ready(function() {
 
 		// Move the Revise Results link into the other tools
 		setTimeout(function() {
-		var reviseLink = jQuery('a[data-auto="nav-revise-link"]').href;
+		var reviseLink = jQuery("a[data-auto='nav-revise-lnk']").href;
 		console.log(reviseLink);	
 		jQuery('ul.ftf-links').hide();
-		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-link" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
+		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-lnk" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
 	},3000);
 
 	} else {
