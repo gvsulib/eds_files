@@ -36,11 +36,11 @@ jQuery(document).ready(function() {
 		}
 
 		// Fix the label for Interlibrary Loan
-		jQuery('.ftf-results ul.basic-list li a span:contains("Interlibrary Loan")').text('Request this item through Document Delivery');
+		jQuery('.ftf-results span:contains("interlibrary loan")').text('Request this item through Document Delivery');
 
 		// Move the Revise Results link into the other tools
 		setTimeout(function() {
-		var reviseLink = jQuery('ul.ftf-links a[data-auto="nav-revise-link"]').href;
+		var reviseLink = jQuery('a[data-auto="nav-revise-link"]').href;
 		console.log(reviseLink);	
 		jQuery('ul.ftf-links').hide();
 		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-link" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
