@@ -39,12 +39,10 @@ jQuery(document).ready(function() {
 		jQuery('.ftf-results span:contains("interlibrary loan")').text('Request this item through Document Delivery');
 
 		// Move the Revise Results link into the other tools
-		setTimeout(function() {
-		var reviseLink = jQuery("a[data-auto='nav-revise-lnk']").href;
+		var reviseLink = jQuery('ul.ftf-links li a[data-auto="nav-revise-lnk').href;
 		console.log(reviseLink);	
 		jQuery('ul.ftf-links').hide();
 		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-lnk" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
-	},3000);
 
 	} else {
 
