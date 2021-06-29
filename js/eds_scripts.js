@@ -35,10 +35,15 @@ jQuery(document).ready(function() {
 					jQuery('.ftf-results ').find('ul.basic-list > li:first-child').after('<h1 class="h3 more-options">More Sources</h1>');
 		}
 
+		// Fix the label for Interlibrary Loan
+		if(jQuery('.ftf-results ul.basic-list li:contains("Interlibrary Loan")').text('Request this item through Document Delivery');
+
 		// Move the Revise Results link into the other tools
+		setTimeout(function() {
 		var reviseLink = jQuery('ul.ftf-links a[data-auto="nav-revise-link"]').href;	
-		//jQuery('ul.ftf-links').hide();
+		jQuery('ul.ftf-links').hide();
 		jQuery('ul.toolbar-tools').prepend('<li><a data-auto="nav-revise-link" href="' + reviseLink + '" class="nav-link color-s1">Revise Request</a></li>');
+	},1000);
 
 	} else {
 
