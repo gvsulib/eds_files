@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 		}
 
 		// Fix the label for Interlibrary Loan
-		if(jQuery('.ftf-results ul.basic-list li:contains("Interlibrary Loan")').text('Request this item through Document Delivery');
+		jQuery('.ftf-results ul.basic-list li:contains("Interlibrary Loan")').text('Request this item through Document Delivery');
 
 		// Move the Revise Results link into the other tools
 		setTimeout(function() {
