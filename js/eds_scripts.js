@@ -42,7 +42,7 @@ jQuery(document).ready(function() {
 		var reviseLink = jQuery('ul.ftf-links li a').parent();
 		console.log(reviseLink);	
 		jQuery('ul.ftf-links').hide();
-		jQuery('ul.toolbar-tools').prepend(reviseLink');
+		jQuery('ul.toolbar-tools').prepend(reviseLink);
 
 	} else {
 
