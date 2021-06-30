@@ -48,4 +48,4 @@
 	border-bottom: 1px solid #333;
 }
 
-.guest-login { display: none !important; }
+.guest-login, #itemHelp { display: none !important; }

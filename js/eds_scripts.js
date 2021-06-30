@@ -60,6 +60,11 @@ jQuery(document).ready(function() {
 			jQuery('#itemAskLibrarian a').text('Get Help Now');
 		}
 
+		if(jQuery('#itemSignIn').length > 0) {
+			console.log ('Fixing the Sign In link');
+			jQuery('#itemAskLibrarian a').text('My Account');
+		}
+
 		if(jQuery('a[data-auto="ep_link"').length > 0) {
 
 			if(jQuery('dt:contains("Online Access:")').length > 0) {
