@@ -95,5 +95,5 @@ jQuery(document).ready(function() {
 
 });
 
-}, 200);
+}, 500);
 
