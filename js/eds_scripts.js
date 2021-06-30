@@ -65,6 +65,8 @@ jQuery(document).ready(function() {
 			jQuery('#itemSignIn a').text('My Account');
 		}
 
+		jQuery('#itemHelp').hide();
+
 		if(jQuery('a[data-auto="ep_link"').length > 0) {
 
 			if(jQuery('dt:contains("Online Access:")').length > 0) {
