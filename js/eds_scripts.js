@@ -62,7 +62,7 @@ jQuery(document).ready(function() {
 
 		if(jQuery('#itemSignIn').length > 0) {
 			console.log ('Fixing the Sign In link');
-			jQuery('#itemAskLibrarian a').text('My Account');
+			jQuery('#itemSignIn a').text('My Account');
 		}
 
 		if(jQuery('a[data-auto="ep_link"').length > 0) {
