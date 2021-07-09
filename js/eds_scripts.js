@@ -56,14 +56,26 @@ jQuery(document).ready(function() {
 
 		if(jQuery('#itemAskLibrarian').length > 0) {
 
-			console.log ('Fixing the Ask a Librarian link');
+			console.log('Fixing the Ask a Librarian link');
 			jQuery('#itemAskLibrarian a').text('Get Help Now');
 		}
 
 		if(jQuery('#itemSignIn').length > 0) {
-			console.log ('Fixing the Sign In link');
+			console.log('Fixing the Sign In link');
 			jQuery('#itemSignIn a').text('My Account');
 		}
+
+		// Change the label on the Loans link
+		if(jQuery('#toolbarHoldsAndCheckouts').length > 0) {
+			console.log('Fixing the Loans link to say My Account');
+			var loansStatement= jQuery('#toolbarHoldsAndCheckouts a').text();
+			var loansChunks = loansStatement.split(' ');
+			var loansTotal = loansChunks[2].split(')');
+			jQuery('#toolbarHoldsAndCheckouts a').text('My Account ' + loansTotal[0] + ' Loans)');
+		}
+
+		// Hide the Update My Account for now - it's dumb
+		jQuery('#itemNotUser a.last').hide();
 
 		jQuery('#itemHelp').hide();
 
