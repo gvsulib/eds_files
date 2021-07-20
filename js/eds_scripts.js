@@ -1,4 +1,4 @@
-/* 
+
 console.log('The customization script is loading.');
 
 setTimeout(function() {
@@ -47,11 +47,7 @@ jQuery(document).ready(function() {
 
 	} else {
 
-		// Hide the Guest Access Banner
-		/*if(jQuery('.guest-login').length > 0) {
-			console.log('Removing the guest banner.');
-			jQuery('.guest-login').hide();
-		}
+		/*
 
 		// Change Ask a Librarian Link - the settings don't appear to work.
 
@@ -79,24 +75,6 @@ jQuery(document).ready(function() {
 		jQuery('#itemNotUser a.last').hide();
 
 		jQuery('#itemHelp').hide();
-/*
-		if(jQuery('a[data-auto="ep_link"').length > 0) {
-
-			if(jQuery('dt:contains("Online Access:")').length > 0) {
-
-				// 
-
-			var onlineLink = jQuery('dt:contains("Online Access:")').next().find('a').attr('href');
-			var onlineLinkLabel = jQuery('dt:contains("Online Access:")').next().find('a').text();
-
-
-			var onlineLinkLabel = jQuery('a[data-auto="ep_link"').text();
-			jQuery('ul.format-control').append('<li class="custom-link-item" data-auto="item_link"><span class="custom-link" data-auto="custom_link"><a data-auto="ep_image_link" href="' + onlineLink + '" target="_new" class="btn btn-primary ils-link">' + onlineLinkLabel + '</a></span></li><style>.btn-primary {background: #1b6ec2; color: #fff !important; } .btn {text-decoration: none; display: inline-block; border: 1px solid transparent; font-weight: normal; font-size: 1em; font-family: "Lato",sans-serif; padding: .325em .85em; -webkit-border-radius: 3.625px; -moz-border-radius: 3.625px; -ms-border-radius: 3.625px; border-radius: 3.625px; cursor: pointer; line-height: 1.65em; -webkit-transition: background 0.15s ease,color 0.15s ease,transform 0.15s ease; -moz-transition: background 0.15s ease,color 0.15s ease,transform 0.15s ease; -ms-transition: background 0.15s ease,color 0.15s ease,transform 0.15s ease; -o-transition: background 0.15s ease,color 0.15s ease,transform 0.15s ease; transition: background 0.15s ease,color 0.15s ease,transform 0.15s ease; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); vertical-align: middle; text-align: center; }</style>');
-
-		}
-
-	
-		} 
 
 		// Don't proxy links to our own website, dude (we can't neverproxy this because of reasons)
 
@@ -107,12 +85,10 @@ jQuery(document).ready(function() {
 		jQuery('.customerLogo').find('a').attr('href', 'https://www.gvsu.edu/library');
 		jQuery('head').append('<style>.color-p4{color:#005bc6 !important;}</style>');
 		jQuery('#footerLinks').append('<li><a href="https://gvsu.edu/library/support">Report a Problem</a></li>');
-
+*/
 	}
-
 
 });
 
 }, 500);
-*/
 
