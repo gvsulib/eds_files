@@ -47,6 +47,18 @@ jQuery(document).ready(function() {
 
 	} else {
 
+		jQuery('#itemHelp').hide();
+
+		// Don't proxy links to our own website, dude (we can't neverproxy this because of reasons)
+
+		if(jQuery('[href*="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').length > 0) {
+			jQuery('a[href*="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').attr('href', 'https://www.gvsu.edu/library');
+		}
+
+		jQuery('.customerLogo').find('a').attr('href', 'https://www.gvsu.edu/library');
+		jQuery('head').append('<style>.color-p4{color:#005bc6 !important;}</style>');
+		jQuery('#footerLinks').append('<li><a href="https://gvsu.edu/library/support">Report a Problem</a></li>');
+
 		/*
 
 		// Change Ask a Librarian Link - the settings don't appear to work.
@@ -74,17 +86,9 @@ jQuery(document).ready(function() {
 		// Hide the Update My Account for now - it's dumb
 		jQuery('#itemNotUser a.last').hide();
 
-		jQuery('#itemHelp').hide();
+		
 
-		// Don't proxy links to our own website, dude (we can't neverproxy this because of reasons)
-
-		if(jQuery('[href*="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').length > 0) {
-			jQuery('a[href*="https://www-gvsu-edu.ezproxy.gvsu.edu/library"]').attr('href', 'https://www.gvsu.edu/library');
-		}
-
-		jQuery('.customerLogo').find('a').attr('href', 'https://www.gvsu.edu/library');
-		jQuery('head').append('<style>.color-p4{color:#005bc6 !important;}</style>');
-		jQuery('#footerLinks').append('<li><a href="https://gvsu.edu/library/support">Report a Problem</a></li>');
+		
 */
 	}
 
