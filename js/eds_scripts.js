@@ -59,8 +59,6 @@ jQuery(document).ready(function() {
 		jQuery('head').append('<style>.color-p4{color:#005bc6 !important;}</style>');
 		jQuery('#footerLinks').append('<li><a href="https://gvsu.edu/library/support">Report a Problem</a></li>');
 
-		/*
-
 		// Change Ask a Librarian Link - the settings don't appear to work.
 
 		if(jQuery('#itemAskLibrarian').length > 0) {
@@ -68,6 +66,13 @@ jQuery(document).ready(function() {
 			console.log('Fixing the Ask a Librarian link');
 			jQuery('#itemAskLibrarian a').text('Get Help Now');
 		}
+
+		// Hide the Update My Account for now - it's dumb
+		jQuery('#itemNotUser a.last').hide();
+
+		/*
+
+		
 
 		if(jQuery('#itemSignIn').length > 0) {
 			console.log('Fixing the Sign In link');
@@ -83,8 +88,7 @@ jQuery(document).ready(function() {
 			jQuery('#toolbarHoldsAndCheckouts a').text('My Account ' + loansTotal[0] + ' Loans)');
 		}
 
-		// Hide the Update My Account for now - it's dumb
-		jQuery('#itemNotUser a.last').hide();
+		
 
 		
 
