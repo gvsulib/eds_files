@@ -1,3 +1,4 @@
+/* 
 console.log('The customization script is loading.');
 
 setTimeout(function() {
@@ -50,7 +51,7 @@ jQuery(document).ready(function() {
 		/*if(jQuery('.guest-login').length > 0) {
 			console.log('Removing the guest banner.');
 			jQuery('.guest-login').hide();
-		}*/
+		}
 
 		// Change Ask a Librarian Link - the settings don't appear to work.
 
@@ -95,7 +96,7 @@ jQuery(document).ready(function() {
 		}
 
 	
-		} */
+		} 
 
 		// Don't proxy links to our own website, dude (we can't neverproxy this because of reasons)
 
@@ -113,4 +114,5 @@ jQuery(document).ready(function() {
 });
 
 }, 500);
+*/
 
