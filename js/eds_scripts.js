@@ -67,8 +67,7 @@ jQuery(document).ready(function() {
 			jQuery('#itemAskLibrarian a').text('Get Help Now');
 		}
 
-		// Hide the Update My Account for now - it's dumb
-		jQuery('#itemNotUser a.last').hide();
+		
 
 		/*
 
@@ -86,11 +85,7 @@ jQuery(document).ready(function() {
 			var loansChunks = loansStatement.split(' ');
 			var loansTotal = loansChunks[2].split(')');
 			jQuery('#toolbarHoldsAndCheckouts a').text('My Account ' + loansTotal[0] + ' Loans)');
-		}
-
-		
-
-		
+		}	
 
 		
 */
