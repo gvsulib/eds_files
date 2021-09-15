@@ -74,6 +74,11 @@ jQuery(document).ready(function() {
 
 			if(getElementById('SearchTerm1').value === 'renewmybooksplease') {
 
+				// Make an overlay so it's obvious something is going to happen
+
+				jQuery('body').append('<div id="overlay"><div id="text">Loading Your Library Account...</div></div>');
+				jQuery('body').append('<style>#text{position: absolute; top: 50%; left: 50%; font-size: 50px; color: white; transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); }#overlay {display: block; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 200; cursor: pointer; }</style>');
+
 				// If so, then get the session variable
 
 				var hostServer = url.hostname;
