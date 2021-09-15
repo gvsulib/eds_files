@@ -70,19 +70,27 @@ jQuery(document).ready(function() {
 		// Test to see if we can create our own link to the Renewal/My Loans page
 
 			// First, check to see if there is a renewal flag attribute in the URL
+			const url = new URL(window.location.href);
 
-			// If so, then get the session variable
+			if(getElementById('SearchTerm1').value === 'renewmybooksplease') {
 
-			var sessionVariable;
+				// If so, then get the session variable
 
-			// Now reload the page on the my loans screen
+				var hostServer = url.hostname;
+				var sessionVariable = url.searchParams.get('sid');
+				var vidVariable = url.searchParams.get('vid');
+				console.log(sessionVariable);
 
-			var renewalURL = 'https://eds.b.ebscohost.com/eds/toolbar/gotofolderaction?theContentItemType=EbookCheckout&sid=' + sessionVariable + '&vid=4';
+				// Now reload the page on the my loans screen
 
+				var renewalURL = 'https://' + hostServer + '/eds/toolbar/gotofolderaction?theContentItemType=EbookCheckout&sid=' + sessionVariable;
+				window.location.href = renewalURL;
 
+			} else {
+				console.log('No renewal flag');
+			}
 		/*
 
-		
 
 		if(jQuery('#itemSignIn').length > 0) {
 			console.log('Fixing the Sign In link');
