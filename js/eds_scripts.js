@@ -67,7 +67,18 @@ jQuery(document).ready(function() {
 			jQuery('#itemAskLibrarian a').text('Get Help Now');
 		}
 
-		
+		// Test to see if we can create our own link to the Renewal/My Loans page
+
+			// First, check to see if there is a renewal flag attribute in the URL
+
+			// If so, then get the session variable
+
+			var sessionVariable;
+
+			// Now reload the page on the my loans screen
+
+			var renewalURL = 'https://eds.b.ebscohost.com/eds/toolbar/gotofolderaction?theContentItemType=EbookCheckout&sid=' + sessionVariable + '&vid=4';
+
 
 		/*
 
