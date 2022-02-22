@@ -48,6 +48,7 @@ jQuery(document).ready(function() {
 	} else {
 
 		jQuery('#itemHelp').hide();
+		jQuery('a#lnkSignInHere').hide();
 
 		// Don't proxy links to our own website, dude (we can't neverproxy this because of reasons)
 
@@ -68,7 +69,6 @@ jQuery(document).ready(function() {
 		}
 
 		// Test to see if we can create our own link to the Renewal/My Loans page
-
 			// First, check to see if there is a renewal flag attribute in the URL
 			const url = new URL(window.location.href);
 
