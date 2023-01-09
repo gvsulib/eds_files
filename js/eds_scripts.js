@@ -71,8 +71,9 @@ jQuery(document).ready(function() {
 		// Test to see if we can create our own link to the Renewal/My Loans page
 			// First, check to see if there is a renewal flag attribute in the URL
 			const url = new URL(window.location.href);
+			var searchTerm = getElementById('SearchTerm1').value;
 
-			if(getElementById('SearchTerm1').value === 'renewmybooksplease') {
+			if(searchTerm === 'renewmybooksplease') {
 
 				// Make an overlay so it's obvious something is going to happen
 
@@ -94,6 +95,14 @@ jQuery(document).ready(function() {
 			} else {
 				console.log('No renewal flag');
 			}
+
+			if((searchTerm === 'DSM V') || (searchTerm === 'DSM 5') || (searchTerm === 'DSM5') || (searchTerm === 'DSM-V') || (searchTerm === 'DSM-5') || (searchTerm === 'dsm-5') || (searchTerm === 'dsm 5')) {
+
+// First, hide the search for a non-relevant DSM text, adn replace with note about finding the real DSM
+jQuery('#publicationsplacard').html('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong>Looking for the DSM-V (Diagnostic and Statistical Manual of Mental Disorders)?</strong><br /><a class="btn btn-primary" href="https://ebookcentral.proquest.com/lib/gvsu/detail.action?docID=1811753">Yes! Show me the DSM-V</a></p></div><style>.alert {position: relative; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent; border-radius: .25rem; }.alert-info {color: #0c5460; background-color: #d1ecf1; border-color: #bee5eb; }.btn {display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1.5rem; line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; margin-top: .7em;}.btn-primary {background: #0032a0;color:#fff; }</style>');
+
+console.log('Added note about DSM');
+}
 		/*
 
 
