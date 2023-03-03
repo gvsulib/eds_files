@@ -62,7 +62,7 @@ jQuery(document).ready(function() {
 
 		// Add an alert to the EDS page - would be nice to find a way to automate this at some point but we will do it manually for now. Sigh.
 
-		var alertOn = false;
+		var alertOn = true;
 
 		var alert = '<strong>The Automated Storage and Retrieval System (ASRS) at Steelcase Library is currently out of order.</strong> If you need a book from Steelcase Library during repairs,try <a href="https://www.gvsu.edu/library/docdel">Document Delivery</a> or <a href="https://www.gvsu.edu/library/chat">get in touch</a> and we will be happy to help!';
 
