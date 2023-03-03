@@ -57,8 +57,20 @@ jQuery(document).ready(function() {
 		}
 
 		jQuery('.customerLogo').find('a').attr('href', 'https://www.gvsu.edu/library');
-		jQuery('head').append('<style>.color-p4{color:#005bc6 !important;}</style>');
+		jQuery('head').append('<style>.alert {position: relative; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent; border-radius: .25rem; }.alert-info {color: #0c5460; background-color: #d1ecf1; border-color: #bee5eb; }.btn {display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1.5rem; line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; margin-top: .7em;}.btn-primary {background: #0032a0;color:#fff !important; } .color-p4{color:#005bc6 !important;}.alert-warning {background-color: #fcf8e3;border-color: #faebcc;}</style>');
 		jQuery('#footerLinks').append('<li><a href="https://gvsu.edu/library/support">Report a Problem</a></li>');
+
+		// Add an alert to the EDS page - would be nice to find a way to automate this at some point but we will do it manually for now. Sigh.
+
+		var alertOn = false;
+
+		var alert = '<strong>The Automated Storage and Retrieval System (ASRS) at Steelcase Library is currently out of order.</strong> If you need a book from Steelcase Library during repairs,try <a href="https://www.gvsu.edu/library/docdel">Document Delivery</a> or <a href="https://www.gvsu.edu/library/chat">get in touch</a> and we will be happy to help!';
+
+		if(alertOn === true) {
+			jQuery('#content').prepend('<div class="alert alert-warning"><p>' + alert + '</p></div>');
+			console.log('Alert posted');
+
+		}
 
 		// Change Ask a Librarian Link - the settings don't appear to work.
 
@@ -99,7 +111,7 @@ jQuery(document).ready(function() {
 			if((searchTerm === 'DSM V') || (searchTerm === 'DSM 5') || (searchTerm === 'DSM5') || (searchTerm === 'DSM-V') || (searchTerm === 'DSM-5') || (searchTerm === 'dsm-5') || (searchTerm === 'dsm 5')) {
 
 // First, hide the search for a non-relevant DSM text, adn replace with note about finding the real DSM
-jQuery('#publicationsplacard').html('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong>Looking for the DSM-5 (Diagnostic and Statistical Manual of Mental Disorders)?</strong><br /><a class="btn btn-primary" href="https://ebookcentral.proquest.com/lib/gvsu/detail.action?docID=1811753">Yes! Show me the DSM-5</a></p></div><style>.alert {position: relative; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent; border-radius: .25rem; }.alert-info {color: #0c5460; background-color: #d1ecf1; border-color: #bee5eb; }.btn {display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1.5rem; line-height: 1.5; border-radius: .25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; margin-top: .7em;}.btn-primary {background: #0032a0;color:#fff; }</style>');
+jQuery('#publicationsplacard').html('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong>Looking for the DSM-5 (Diagnostic and Statistical Manual of Mental Disorders)?</strong><br /><a class="btn btn-primary" href="https://ebookcentral.proquest.com/lib/gvsu/detail.action?docID=1811753">Yes! Show me the DSM-5</a></p></div>');
 
 console.log('Added note about DSM');
 }
