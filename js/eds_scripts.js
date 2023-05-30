@@ -1,4 +1,3 @@
-m
 console.log('The customization script is loading.');
 
 setTimeout(function() {
