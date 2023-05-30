@@ -107,7 +107,7 @@ jQuery(document).ready(function() {
 				console.log('No renewal flag');
 			}
 
-			setTimeOut(function() {
+			setTimeout(function() {
 				if(jQuery('span.limiter:contains("Catalog Only")')) {
             	console.log('This is a Catalog Search - adding LOCATE banner');
 
