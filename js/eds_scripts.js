@@ -1,3 +1,4 @@
+m
 console.log('The customization script is loading.');
 
 setTimeout(function() {
@@ -107,12 +108,12 @@ jQuery(document).ready(function() {
 				console.log('No renewal flag');
 			}
 
-			$('span.limiter:contains("Catalog Only")').each(function () {
-            	console.log('This is a Catalog Search - adding LOCATE banner');
+			jQuery('span.limiter:contains("Catalog Only")').each(function () {
+            console.log('This is a Catalog Search - adding LOCATE banner');
 
-           		jQuery('#resultListControl').prepend('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong style="display:inline-block; margin-top:.7em;">Looking for a book or eBook? Try our new Library Catalog Search!</strong><a class="button" style="display:inline-block; float: right;" href="https://gvsu.locate.ebsco.com/search?option=keyword&query=' + searchTerm + '">Try New Book Search</a></p></div>');
+           jQuery('#resultListControl').prepend('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong style="display:inline-block; margin-top:.7em;">Looking for a book or eBook? Try our new Library Catalog Search!</strong><a class="button" style="display:inline-block; float: right;" href="https://gvsu.locate.ebsco.com/search?option=keyword&query=' + searchTerm + '">Try New Book Search</a></p></div>');
 
-        	});
+        });
 
 			if((searchTerm === 'DSM V') || (searchTerm === 'DSM 5') || (searchTerm === 'DSM5') || (searchTerm === 'DSM-V') || (searchTerm === 'DSM-5') || (searchTerm === 'dsm-5') || (searchTerm === 'dsm 5')) {
 
