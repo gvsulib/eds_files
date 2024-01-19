@@ -119,7 +119,7 @@ jQuery(document).ready(function() {
 			if((searchTerm === 'DSM V') || (searchTerm === 'DSM 5') || (searchTerm === 'DSM5') || (searchTerm === 'DSM-V') || (searchTerm === 'DSM-5') || (searchTerm === 'dsm-5') || (searchTerm === 'dsm 5')) {
 
 // First, hide the search for a non-relevant DSM text, adn replace with note about finding the real DSM
-jQuery('#publicationsplacard').html('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong>Looking for the DSM-5 (Diagnostic and Statistical Manual of Mental Disorders)?</strong><br /><a class="btn btn-primary" href="https://ebookcentral.proquest.com/lib/gvsu/detail.action?docID=1811753">Yes! Show me the DSM-5</a></p></div>');
+jQuery('#publicationsplacard').html('<div class="alert alert-info"><p style="padding-bottom: 0 !important;"><strong>Looking for the DSM-5 (Diagnostic and Statistical Manual of Mental Disorders)?</strong><br /><a class="btn btn-primary" href="https://gvsu.edu/library/dsmv">Yes! Show me the DSM-5</a></p></div>');
 
 console.log('Added note about DSM');
 }
