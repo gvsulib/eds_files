@@ -146,5 +146,5 @@ console.log('Added note about DSM');
 
 });
 
-}, 500);
+}, 1500);
 
